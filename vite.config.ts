@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'build',
+    outDir: 'dist',
     rollupOptions: {
       external: [
         'react',
@@ -13,7 +13,8 @@ export default defineConfig({
         'lucide-react',
         'three',
         '@react-three/fiber',
-        '@react-three/drei'
+        '@react-three/drei',
+        'maath'
       ],
     },
   },
