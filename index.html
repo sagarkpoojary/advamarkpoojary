@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADV Amar K. Poojary | Professional Legal Portfolio</title>
+    <meta name="description" content="Official portfolio of Advocate Amar K. Poojary. Litigation Expert and Corporate Strategist based in Mangalore.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              zinc: {
+                50: '#fafafa',
+                100: '#f4f4f5',
+                200: '#e4e4e7',
+                300: '#d4d4d8',
+                400: '#a1a1aa',
+                500: '#71717a',
+                600: '#52525b',
+                700: '#3f3f46',
+                800: '#27272a',
+                900: '#18181b',
+                950: '#060608',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
+            },
+            letterSpacing: {
+              'tighter-extreme': '-0.06em',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      ::-webkit-scrollbar { width: 3px; }
+      ::-webkit-scrollbar-track { background: #060608; }
+      ::-webkit-scrollbar-thumb { background: #27272a; }
+      
+      body {
+        background-color: #060608;
+        color: #f4f4f5;
+        overflow-x: hidden;
+      }
+
+      /* Global Grain Texture */
+      .grain::after {
+        content: "";
+        position: fixed;
+        top: -150%;
+        left: -150%;
+        width: 300%;
+        height: 300%;
+        background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+        opacity: 0.04;
+        pointer-events: none;
+        z-index: 9999;
+        animation: noise 8s steps(10) infinite;
+      }
+
+      @keyframes noise {
+        0%, 100% { transform: translate(0, 0); }
+        10% { transform: translate(-5%, -10%); }
+        20% { transform: translate(-15%, 5%); }
+        30% { transform: translate(7%, -25%); }
+        40% { transform: translate(-5%, 25%); }
+        50% { transform: translate(-15%, 10%); }
+        60% { transform: translate(15%, 0%); }
+        70% { transform: translate(0%, 15%); }
+        80% { transform: translate(3%, 35%); }
+        90% { transform: translate(-10%, 10%); }
+      }
+
+      .blur-backdrop {
+        backdrop-filter: blur(20px) saturate(180%);
+      }
+      
+      .text-mask {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "react/jsx-runtime": "https://esm.sh/react@18.3.1/jsx-runtime",
+    "react-dom": "https://esm.sh/react-dom@18.3.1",
+    "lucide-react": "https://esm.sh/lucide-react@0.344.0?external=react",
+    "framer-motion": "https://esm.sh/framer-motion@11.0.8?external=react,react-dom",
+    "three": "https://esm.sh/three@0.160.0",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@8.15.16?external=react,react-dom,three",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@9.102.6?external=react,react-dom,three,@react-three/fiber",
+    "maath": "https://esm.sh/maath@0.10.7/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+</head>
+  <body class="bg-zinc-950 text-zinc-100 antialiased selection:bg-white selection:text-black grain">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
